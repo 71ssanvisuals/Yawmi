@@ -1,0 +1,30 @@
+name: yawmi
+description: "يومي — جدول المهام اليومية والتدوين، يعمل دون إنترنت."
+publish_to: 'none'
+
+# الرقم بعد + هو رقم الإصدار الداخلي (versionCode) ويجب أن يزيد مع كل تحديث.
+# عند البناء عبر GitHub Actions يُضبط تلقائياً من رقم التشغيل.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.0
+  flutter: ">=3.47.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # مكتبة Material الرسمية (انفصلت عن نواة Flutter ابتداءً من 3.47).
+  material_ui: ^1.11.0
+  # قاعدة بيانات SQLite محلية.
+  sqflite: ^2.4.2
+  path: ^1.9.1
+  # إدارة الحالة.
+  provider: ^6.1.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
